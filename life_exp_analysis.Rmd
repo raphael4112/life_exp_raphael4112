@@ -1,0 +1,33 @@
+---
+title: "life_exp_analysis"
+author: "Chi-Lin Lin"
+date: "2021/8/31"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(tidyverse)
+library(gapminder)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

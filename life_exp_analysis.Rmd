@@ -3,24 +3,37 @@ title: "life_exp_analysis"
 author: "Chi-Lin Lin"
 date: "2021/8/31"
 output: word_document
+unlcolor: "blue"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-
-```{r}
+```{r include=FALSE}
 library(tidyverse)
 library(gapminder)
 ```
 
+# Abstract
+
+```{r}
+data(gapminder_unfiltered )
+```
+```{r}
+gapminder_unfiltered
+```
 
 
+# Analysis
 
-
-
-
+```{r}
+gapminder_unfiltered %>% 
+  group_by(year) %>% 
+  filter(lifeExp == max(lifeExp)) %>% 
+  ungroup() %>% 
+  select(year, country, lifeExp) %>% 
+  arrange(year)
+```
 
 
 

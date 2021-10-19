@@ -2,7 +2,7 @@
 title: "life_exp_analysis"
 author: "Chi-Lin Lin"
 date: "2021/8/31"
-output: word_document
+output: html_document
 unlcolor: "blue"
 ---
 

@@ -14,6 +14,11 @@ library(tidyverse)
 library(gapminder)
 ```
 
+```{r}
+# fetch is bring the code down
+```
+
+
 # Abstract
 
 ```{r}
@@ -32,7 +37,8 @@ gapminder_unfiltered %>%
   filter(lifeExp == max(lifeExp)) %>% 
   ungroup() %>% 
   select(year, country, lifeExp) %>% 
-  arrange(year)
+  arrange(year) ->
+  sumdat
 ```
 
 
